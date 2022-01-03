@@ -81,9 +81,9 @@ let botOtherMessages= document.createElement('div');
 // articles//
 else if(userText=='article'||userText== 'Article'){
   
-  let artOne='<a href='https://youthstrends.webflow.io/#article-1' >Video Games: A modern Drug</a>';
-  let artTwo='link2';
-  article=[artOne,artTwo];
+  let artOne="link 1";
+
+  article=[artOne];
 let randomArticle=Math.random()*2
 let finArt= Math.floor(randomArticle);
 let art=article[finArt];
