@@ -109,14 +109,21 @@ let adv=advice[finAdv];
   }
   
 //Quotes //
-else if(userText=='quotes'||userText== 'Quotes'){
+else if(userText=='quotes'||userText== 'Quotes'||userText=='quote'||userText== 'Quote'){
   
   let quoOne="A lazy person will only end up being more lazy. So don't be lazy";
 let quoTwo="Remember God loves you always";
+let quoThree="That which does not kill us makes us stronger. Friedrich Nietzsche";
+let quoFour="When you look into an abyss, the abyss also looks into you. Friedrich Nietzsche ";
+let quoFive="No matter what you're going through, there's a light at the end of the tunnel and it may seem hard to get to it but you can do it and just keep working towards it and you'll find the positive side of things. Demi Lovato ";
+let quoSix="A man travels the world over in search of what he needs and returns home to find it. George A. Moore ";
+let quoSev="The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion. Albert Camus ";
+let quoEig="Nothing is more despicable than respect based on fear. Albert Camus ";
+let quoNin=" Those who lack the courage will always find a philosophy to justify it. Albert Camus";
+let quoTe="Once you bring life into the world, you must protect it. We must protect it by changing the world.Elie Wiesel ";
 
-
-  quote=[quoOne,quoTwo];
-let randomQuote=Math.random()*2
+  quote=[quoOne,quoTwo,quoThree,quoFour,quoFive,quoSix,quoSev,quoEig, quoNin,quoTe];
+let randomQuote=Math.random()*10
 let finQuo= Math.floor(randomQuote);
 let quo=quote[finQuo];
 
