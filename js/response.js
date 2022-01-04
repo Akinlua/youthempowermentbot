@@ -402,18 +402,18 @@ $(arrange).show();
  
 
     setTimeout( function (){
-   let artOne="Check out this article to educate yourself. <a href='https://www.hindawi.com/journals/edri/2021/5611033/' >Assessing the Effectiveness of Innovative Pedagogy and Lecture Method on Students Academic Achievement and Retention in Computer Programming </a> ";
- let artTwo="Check out this article to educate yourself. <a href='https://www.hindawi.com/journals/edri/2021/8160084/' >Techno-Pedagogical Skills for 21st Century Digital Classrooms: An Extensive Literature Review</a> ";
-let artThree="Check out this article to educate yourself.<a href='https://youthstrends.webflow.io/' >Video Games A modern Drug</a> "; 
-
-  article=[artOne,artTwo,artThree];
-let randomArticle=Math.random()*3
-let finArt= Math.floor(randomArticle);
-let art=article[finArt];
+   let eduOne="Check out this article to educate yourself. <a href='https://www.hindawi.com/journals/edri/2021/5611033/' >Assessing the Effectiveness of Innovative Pedagogy and Lecture Method on Students Academic Achievement and Retention in Computer Programming </a> ";
+ let eduTwo="Check out this article to educate yourself. <a href='https://www.hindawi.com/journals/edri/2021/8160084/' >Techno-Pedagogical Skills for 21st Century Digital Classrooms: An Extensive Literature Review</a> ";
+let eduThree="Check out this article to educate yourself.<a href='https://youthstrends.webflow.io/' >Video Games A modern Drug</a> "; 
+let eduFour="Check out this article to educate yourself. <a href=' https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2006842/'> hi</a>";
+  educate=[eduOne,eduTwo,eduThree,eduFour];
+let randomEducate=Math.random()*4
+let finEdu= Math.floor(randomEducate);
+let edu=educate[finEdu];
 
  botOtherMessages.remove();
- let  bot= '<p class="bottext"><span>'+art+'</span></p>';
-$(optRespTwo).append(art);
+ let  bot= '<p class="bottext"><span>'+edu+'</span></p>';
+$(optRespTwo).append(edu);
  $('#chatbox').append(bot);
    
    
