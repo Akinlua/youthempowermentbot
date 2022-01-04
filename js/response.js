@@ -174,7 +174,7 @@ $('#chatbox').append(hey);
  let two='What do you do';
  let three='I want to know how to realise my skill';
  let four='I want to know about skill';
- let five='I want to know about education';
+ let five='I would love to be educated';
  let six='I want to know about Scholarship';
  let seven='Ask me a question';
 
@@ -411,9 +411,10 @@ let randomEducate=Math.random()*4
 let finEdu= Math.floor(randomEducate);
 let edu=educate[finEdu];
 
- botOtherMessages.remove();
- let  bot= '<p class="bottext"><span>'+edu+'</span></p>';
-$(optRespTwo).append(edu);
+bothtml=edu;
+ 
+ let  bot= '<p class="bottext"><span>'+bothtml+'</span></p>';
+$(optRespTwo).append(bothtml);
  $('#chatbox').append(bot);
    
    
