@@ -15,6 +15,11 @@
   box-sizing:border-box;
 }
 
+a {
+text-decoration: none;
+color: #3e3e95;
+}
+
 body{
  width:100vw;
 height:100vh;
@@ -177,6 +182,7 @@ font-color:black;
   text-align:left;
   background-color: #fff;
    border-style: solid;
+border-color: #292989;
    border-radius:30px;
    padding:8px;
      width:auto;
@@ -185,13 +191,14 @@ font-color:black;
     margin: 1px 1px 1px 1px;
   }
  
- .opttext:hover{
-   background-color:light-blue;
+ .opttext: hover {
+   background-color: yellow
    
  } 
- 
-  .opttext:click{
-   background-color:light-blue;
+
+
+  .opttext: active {
+   background-color: lightblue;
    
  } 
  .arrange{
