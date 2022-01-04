@@ -32,7 +32,7 @@ function getTime(){
 
 function botFirstMessage(){
 
-  let bot_msg='hi there!!!🌄🌞/🌃'
+  let bot_msg="hi there!!!🌄🌞/🌃. Pls check this link to know about me :) <a href='https://ye-about.webflow.io/' >Go here</a> "
  document.getElementById('botFirstMessage').innerHTML= bot_msg;
 document.getElementById('optone').innerHTML='hey';
   document.getElementById('opttoo').innerHTML='hi';
@@ -81,15 +81,23 @@ let botOtherMessages= document.createElement('div');
 // articles//
 else if(userText=='article'||userText== 'Article'){
   
-  let artOne="link 1";
+  let artOne="Check out this article. <a href='https://www.hindawi.com/journals/edri/2021/5611033/' >Assessing the Effectiveness of Innovative Pedagogy and Lecture Method on Students Academic Achievement and Retention in Computer Programming </a> ";
+ let artTwo="Check out this article. <a href='https://www.hindawi.com/journals/edri/2021/8160084/' >Techno-Pedagogical Skills for 21st Century Digital Classrooms: An Extensive Literature Review</a> ";
+let artThree="Check out this article.<a href='https://youthstrends.webflow.io/' >Video Games A modern Drug</a> "; 
 
-  article=[artOne];
-let randomArticle=Math.random()*2
+  article=[artOne,artTwo,artThree];
+let randomArticle=Math.random()*3
 let finArt= Math.floor(randomArticle);
 let art=article[finArt];
 
-   bothtml=art;
-    
+  setTimeout( function (){
+ botOtherMessages.remove();
+ let  bot= '<p class="bottext"><span>'+art+'</span></p>';
+ $('#chatbox').append(bot);
+       },1000);
+ 
+ 
+ 
   }
   
 // advice//
@@ -97,18 +105,22 @@ else if(userText=='advice'||userText== 'Advice'){
   
   let advOne="A lazy person will only end up being more lazy. So don't be lazy";
 let advTwo="Remember God loves you always";
+let advThree="Advice is like snow - the softer it falls, the longer it dwells upon, and the deeper it sinks into the mind. Samuel Taylor Coleridge. ";
+let advFour="When we honestly ask ourselves which person in our lives means the most to us, we often find that it is those who, instead of giving advice, solutions, or cures, have chosen rather to share our pain and touch our wounds with a warm and tender hand. Henri Nouwen. ";
+let advFive=" When we honestly ask ourselves which person in our lives means the most to us, we often find that it is those who, instead of giving advice, solutions, or cures, have chosen rather to share our pain and touch our wounds with a warm and tender hand. Henri Nouwen.";
+let advSix=" My only advice is, follow your dream and do whatever you like to do the most. I chose journalism because I wanted to be in the places where history was being made. Jorge Ramos.";
 
-
-  advice=[advOne,advTwo];
-let randomAdvice=Math.random()*2
+  advice=[advOne,advTwo,advThree,advFour,advFive,advSix];
+let randomAdvice=Math.random()*6
 let finAdv= Math.floor(randomAdvice);
 let adv=advice[finAdv];
 
    bothtml=adv;
     
   }
-  
+
 //Quotes //
+
 else if(userText=='quotes'||userText== 'Quotes'||userText=='quote'||userText== 'Quote'){
   
   let quoOne="A lazy person will only end up being more lazy. So don't be lazy";
@@ -131,6 +143,25 @@ let quo=quote[finQuo];
     
   }
  
+//goodwill//
+
+else if(userText=='goodwill'||userText== 'Goodwill'){
+  
+  let goodOne='“At this very moment enormous numbers of intelligent men and women of goodwill are trying to build a better world. But problems are born faster than they can be solved.”― B.F. Skinner, Walden Two';
+let goodTwo=' “The difference between darkness and brightness is how you thrive on those moments and how you use such circumstances with goodwill in your spirit.”― Angelica Hopes';
+let goodThree='“The non-violent resistor not only avoids external, physical violence, but he avoids internal violence of spirit. He not only refuses to shoot his opponent, but he refuses to hate him. And he stands with understanding, goodwill at all times.”― Martin Luther King Jr. ';
+let goodFour=' “Let us reach out to the people and show them an abundance of goodwill. We must, however, learn to identify manipulations as well and uncover maneuvers in the dark if we do not want to be tricked by lying eyes. ("With confidence")”― Erik Pevernagie';
+
+
+
+  goodwill=[goodOne,goodTwo,goodThree,goodFour];
+let randomGoodwill=Math.random()*4
+let finGoo= Math.floor(randomGoodwill);
+let good=goodwill[finGoo];
+
+   bothtml=good;
+    
+  }
 
 // hobbies //
     //dancing//
@@ -659,10 +690,8 @@ let  bot= '<p class="bottext"><span>'+bothtml+'</span></p>';
 },1000); 
 
 }
- 
- 
- 
- 
+
+
  
  
  
@@ -670,7 +699,10 @@ let  bot= '<p class="bottext"><span>'+bothtml+'</span></p>';
  
  
  else{
-   bothtml='Try asking something else';
+   bothtml='Try asking something else. Or check here to know the problem. <a href="https://ye-about.webflow.io/">Go here</a> ';
+let  bot= '<p class="bottext"><span>'+bothtml+'</span></p>';
+ $('#chatbox').append(bot);
+
  }
  
  

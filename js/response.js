@@ -351,7 +351,7 @@ $(threeOpt).click(
 
     setTimeout( function (){
    
-   bothtml='You can read this article to know more on how to realise your skill . Here is the link';
+   bothtml= "Check out the website to know more on how to realise your skill. <a href='https://youth-and-teens-empowerment.webflow.io/' >Go here</a>";
 let  bot= '<p class="bottext"><span>'+bothtml+'</span></p>'
  $('#chatbox').append(bot);
 $(arrange).show();
@@ -377,7 +377,7 @@ $(arrange).show();
 
     setTimeout( function (){
    
-   bothtml='To know more about skill read this';
+   bothtml= "To know more about skill check the website <a href='https://youth-and-teens-empowerment.webflow.io/' >Go here</a>";
 let  bot= '<p class="bottext"><span>'+bothtml+'</span></p>'
  $(optRespTwo).append(bothtml);
  $('#chatbox').append(bot);
@@ -394,7 +394,6 @@ $(arrange).show();
 // I want to... education//
  $(fiveOpt).click(
   function(){
-    
 
   
     
@@ -404,7 +403,7 @@ $(arrange).show();
 
     setTimeout( function (){
    
-   bothtml='Read this article to know more about education. This is is the link';
+   bothtml='Read this article to know more about education. ';
 let  bot= '<p class="bottext"><span>'+bothtml+'</span></p>'
  $(optRespTwo).append(bothtml);
  $('#chatbox').append(bot);
@@ -431,7 +430,7 @@ $(arrange).show();
 
     setTimeout( function (){
    
-   bothtml='Read this article to know about scholarships. This is is the link';
+   bothtml="Check this link to find out some opportunities.<a href='https://youthstrends.webflow.io/opportunities#scholar' >Go here</a>";
 let  bot= '<p class="bottext"><span>'+bothtml+'</span></p>'
  $(optRespTwo).append(bothtml);
  $('#chatbox').append(bot);
@@ -444,7 +443,7 @@ $(arrange).show();
  }
  );
  
- 
+ //goodwill//
 $(eightOpt).click(
   function(){
     
@@ -456,13 +455,25 @@ $(eightOpt).click(
  
 
     setTimeout( function (){
-    
-   advice=[advOne,advTwo];
-let randomAdvice=Math.random()*2
-let finAdv= Math.floor(randomAdvice);
-let adv=advice[finAdv];
 
-   bothtml=adv;
+
+
+  
+  let goodOne='“At this very moment enormous numbers of intelligent men and women of goodwill are trying to build a better world. But problems are born faster than they can be solved.”― B.F. Skinner, Walden Two';
+let goodTwo=' “The difference between darkness and brightness is how you thrive on those moments and how you use such circumstances with goodwill in your spirit.”― Angelica Hopes';
+let goodThree='“The non-violent resistor not only avoids external, physical violence, but he avoids internal violence of spirit. He not only refuses to shoot his opponent, but he refuses to hate him. And he stands with understanding, goodwill at all times.”― Martin Luther King Jr. ';
+let goodFour=' “Let us reach out to the people and show them an abundance of goodwill. We must, however, learn to identify manipulations as well and uncover maneuvers in the dark if we do not want to be tricked by lying eyes. ("With confidence")”― Erik Pevernagie';
+
+
+
+  goodwill=[goodOne,goodTwo,goodThree,goodFour];
+let randomGoodwill=Math.random()*4
+let finGoo= Math.floor(randomGoodwill);
+let good=goodwill[finGoo];
+
+   bothtml=good;
+    
+  
 let  bot= '<p class="bottext"><span>'+bothtml+'</span></p>'
  $(optRespTwo).append(bothtml);
  $('#chatbox').append(bot);
@@ -506,7 +517,6 @@ $(arrange).show();
 }
 
 optResponse();
-
 
 
 
