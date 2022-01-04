@@ -402,24 +402,20 @@ $(arrange).show();
  
 
     setTimeout( function (){
-   let artOne="Check out this article. <a href='https://www.hindawi.com/journals/edri/2021/5611033/' >Assessing the Effectiveness of Innovative Pedagogy and Lecture Method on Students Academic Achievement and Retention in Computer Programming </a> ";
- let artTwo="Check out this article. <a href='https://www.hindawi.com/journals/edri/2021/8160084/' >Techno-Pedagogical Skills for 21st Century Digital Classrooms: An Extensive Literature Review</a> ";
-let artThree="Check out this article.<a href='https://youthstrends.webflow.io/' >Video Games A modern Drug</a> "; 
+   let artOne="Check out this article to educate yourself. <a href='https://www.hindawi.com/journals/edri/2021/5611033/' >Assessing the Effectiveness of Innovative Pedagogy and Lecture Method on Students Academic Achievement and Retention in Computer Programming </a> ";
+ let artTwo="Check out this article to educate yourself. <a href='https://www.hindawi.com/journals/edri/2021/8160084/' >Techno-Pedagogical Skills for 21st Century Digital Classrooms: An Extensive Literature Review</a> ";
+let artThree="Check out this article to educate yourself.<a href='https://youthstrends.webflow.io/' >Video Games A modern Drug</a> "; 
 
   article=[artOne,artTwo,artThree];
 let randomArticle=Math.random()*3
 let finArt= Math.floor(randomArticle);
 let art=article[finArt];
 
-  setTimeout( function (){
  botOtherMessages.remove();
  let  bot= '<p class="bottext"><span>'+art+'</span></p>';
+$(optRespTwo).append(art);
  $('#chatbox').append(bot);
-       },1000);
- 
- 
- 
-  }
+   
    
 $(arrange).show();
 
