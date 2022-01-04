@@ -699,9 +699,13 @@ let  bot= '<p class="bottext"><span>'+bothtml+'</span></p>';
  
  
  else{
+setTimeout( function (){
+ botOtherMessages.remove();
    bothtml='Try asking something else. Or check here to know the problem. <a href="https://ye-about.webflow.io/">Go here</a> ';
 let  bot= '<p class="bottext"><span>'+bothtml+'</span></p>';
  $('#chatbox').append(bot);
+    },1000);
+  
 
  }
  
