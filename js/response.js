@@ -8,7 +8,7 @@ let advTwo="Remember God loves you always";
  let two='What do you do';
  let three='I want to know how to realise my skill';
  let four='I want to know about skill';
- let five='I want to know about education';
+ let five='I would love to be educated';
  let six='I want to know about Scholarship';
  let seven='Ask me a question';
  let eight='good will messages';
@@ -404,8 +404,8 @@ $(arrange).show();
     setTimeout( function (){
    let eduOne="Check out this article to educate yourself. <a href='https://www.hindawi.com/journals/edri/2021/5611033/' >Assessing the Effectiveness of Innovative Pedagogy and Lecture Method on Students Academic Achievement and Retention in Computer Programming </a> ";
  let eduTwo="Check out this article to educate yourself. <a href='https://www.hindawi.com/journals/edri/2021/8160084/' >Techno-Pedagogical Skills for 21st Century Digital Classrooms: An Extensive Literature Review</a> ";
-let eduThree="Check out this article to educate yourself.<a href='https://youthstrends.webflow.io/' >Video Games A modern Drug</a> "; 
-let eduFour="Check out this article to educate yourself. <a href=' https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2006842/'> hi</a>";
+let eduThree="Check out this article to educate yourself.<a href='https://youthstrends.webflow.io/' >Video Games A modern Drug</a> ";
+let eduFour="Check out this article to educate yourself. <a href=' https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2006842/'>Gut microbiota diversity across ethnicities in the United States </a>";
   educate=[eduOne,eduTwo,eduThree,eduFour];
 let randomEducate=Math.random()*4
 let finEdu= Math.floor(randomEducate);
